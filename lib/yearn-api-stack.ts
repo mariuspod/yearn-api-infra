@@ -56,7 +56,6 @@ export class YearnAPIECSStack extends Stack {
             FASTIFY_ADDRESS: "0.0.0.0",
             NODE_ENV: "production",
             REQUEST_TIMEOUT: "1000",
-            MAINNET_SUBGRAPH_ID: "5xMSe3wTNLgFQqsAc5SCVVwT4MiRb5AogJCuSN9PjzXF",
           },
           secrets: {
             WEB3_HTTP_PROVIDER: ecs.Secret.fromSecretsManager(
@@ -87,9 +86,9 @@ export class YearnAPIECSStack extends Stack {
               servicesStack.secretsManager,
               "ZAPPER_API_KEY"
             ),
-            SUBGRAPH_API_KEY: ecs.Secret.fromSecretsManager(
+            MAINNET_SUBGRAPH_ENDPOINT: ecs.Secret.fromSecretsManager(
               servicesStack.secretsManager,
-              "SUBGRAPH_API_KEY"
+              "MAINNET_SUBGRAPH_ENDPOINT"
             ),
           },
         },
