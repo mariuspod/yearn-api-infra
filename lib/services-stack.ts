@@ -36,6 +36,7 @@ export class YearnAPIServicesStack extends Stack {
           WEB3_HTTP_PROVIDER_FTM_USERNAME: "",
           WEB3_HTTP_PROVIDER_FTM_PASSWORD: "",
           WEB3_HTTP_PROVIDER_ARB: "",
+          WEB3_HTTP_PROVIDER_OPT: "",
           REMOTE_WRITE: "",
           REMOTE_WRITE_USERNAME: "",
           REMOTE_WRITE_PASSWORD: "",
